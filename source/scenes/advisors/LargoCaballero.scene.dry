@@ -1,0 +1,51 @@
+title: Francisco Largo Caballero "The Spanish Lenin"
+is-pinned-card: true
+tags: advisor, Labor
+card-image: 
+view-if: LargoCaballero_advisor = 1
+new-page: true 
+
+= Francisco Largo Caballero
+
+Largo Caballero is a leader of the UGT, the PSOE aligned trade union.
+
+- @blue_collar
+- @union_unity
+- @
+- @
+- @root: Return to main
+
+@blue_collar
+title: Organizing blue-collar workers
+subtitle: Improve our standing among the working class.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 6; new_middle_spd += 6*(1-dissent);
+
+We have increased our organizing among blue-collar workers.
+
+@union_unity
+title: Union-party coordination
+subtitle: Reduce dissent among the unions.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; labor_dissent -= 10;
+
+We have reduced tensions with the Labor faction.
+
+@
+title: 
+subtitle: 
+choose-if: 
+unavailable-subtitle: 
+on-arrival: advisor_action_timer = 6; 
+go-to: 
+
+@
+title: 
+subtitle: 
+choose-if: 
+unavailable-subtitle: 
+on-arrival: advisor_action_timer = 6
+go-to: 
+
