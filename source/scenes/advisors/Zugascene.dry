@@ -1,0 +1,41 @@
+title: Julián Zugazagoitia
+is-pinned-card: true
+tags: advisor, reformist
+card-image: 
+view-if: Zuga_advisor = 1
+new-page: true 
+
+= Julián Zugazagoitia
+
+Zuga is 
+
+- @
+- @
+- @
+- @root: Return to main
+
+@
+title: 
+subtitle: 
+choose-if:
+unavailable-subtitle: 
+on-arrival: advisor_action_timer = 6; 
+
+
+
+@
+title: 
+subtitle: 
+choose-if:
+unavailable-subtitle: 
+on-arrival: advisor_action_timer = 6;
+go-to: 
+
+@
+title: 
+subtitle:
+unavailable-subtitle:
+choose-if: advisor_action_timer == 
+on-arrival: advisor_action_timer = 6;  
+
+
