@@ -10,7 +10,7 @@ new-page: true
 Prieto is one of the makers of the San Sebastian Pact.
 
 - @coalition
-- @
+- @media
 - @
 - @root: Return to main
 
@@ -23,7 +23,7 @@ on-arrival: advisor_action_timer = 6;
 go-to: 
 
 
-@
+@media
 title: 
 subtitle: 
 choose-if: advisor_action_timer == 0 and rural_policy > 0
