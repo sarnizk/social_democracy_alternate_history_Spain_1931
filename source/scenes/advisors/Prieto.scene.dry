@@ -1,0 +1,40 @@
+title: Indalecio Prieto
+is-pinned-card: true
+tags: advisor, reformist
+card-image: 
+view-if: Prieto_advisor = 1
+new-page: true 
+
+= Indalecio Prieto
+
+Prieto is one of the makers of the San Sebastian Pact.
+
+- @coalition
+- @
+- @
+- @root: Return to main
+
+@coalition
+title: 
+subtitle: 
+choose-if: 
+unavailable-subtitle: 
+on-arrival: advisor_action_timer = 6; 
+go-to: 
+
+
+@
+title: 
+subtitle: 
+choose-if: advisor_action_timer == 0 and rural_policy > 0
+unavailable-subtitle: 
+on-arrival: advisor_action_timer = advisor_action_timer = 6; 
+
+@
+title: 
+subtitle: 
+choose-if: 
+unavailable-subtitle: 
+
+
+
