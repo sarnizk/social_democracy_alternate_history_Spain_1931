@@ -1,0 +1,45 @@
+title: Juan Negrín
+is-pinned-card: true
+tags: advisor, left
+card-image: 
+view-if: Negrín_advisor = 1
+new-page: true 
+
+= Negrín
+
+Juan Negrín is a stauch oponent of fascism, and advocates for class struggle and collaboration with the USSR and the PCE.
+
+- @class_struggle
+- @
+- @
+- @root: Return to main
+
+@class_struggle
+title: Rally for class struggle
+subtitle: The core of socialism should be the struggle of the proletariat against the bourgeoisie.
+unavailable-subtitle: 
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; 
+
+Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
+
+
+@
+title: 
+subtitle: 
+unavailable-subtitle: 
+choose-if: advisor_action_timer = 
+on-arrival: advisor_action_timer = 6;
+
+
+@
+title: 
+subtitle: 
+unavailable-subtitle: 
+view-if: 
+choose-if: advisor_action_timer == 
+on-arrival: advisor_action_timer = 6; 
+
+
+
+
