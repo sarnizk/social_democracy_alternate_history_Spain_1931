@@ -33,7 +33,7 @@ on-arrival: advisor_action_timer = advisor_action_timer = 6;
 
 description placeholder
 
-@
+@action placeholder
 title: 
 subtitle: 
 choose-if: 
