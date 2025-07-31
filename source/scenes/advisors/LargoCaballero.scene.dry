@@ -11,8 +11,8 @@ Largo Caballero is a leader of the UGT, the PSOE aligned trade union.
 
 - @blue_collar
 - @union_unity
-- @
-- @
+- @ action placeholder
+- @ action placeholder
 - @root: Return to main
 
 @blue_collar
@@ -33,7 +33,7 @@ on-arrival: advisor_action_timer = 6; labor_dissent -= 10;
 
 We have reduced tensions with the Labor faction.
 
-@
+@ action placeholder
 title: 
 subtitle: 
 choose-if: 
@@ -41,7 +41,9 @@ unavailable-subtitle:
 on-arrival: advisor_action_timer = 6; 
 go-to: 
 
-@
+description placeholder
+
+@ action placeholder
 title: 
 subtitle: 
 choose-if: 
@@ -49,3 +51,4 @@ unavailable-subtitle:
 on-arrival: advisor_action_timer = 6
 go-to: 
 
+description placeholder
