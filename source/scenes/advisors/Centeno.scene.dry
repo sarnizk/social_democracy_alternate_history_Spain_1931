@@ -1,0 +1,50 @@
+title: Tomás Centeno
+is-pinned-card: true
+tags: advisor, 
+card-image: 
+view-if: Centeno_advisor = 1
+new-page: true
+#face-image:
+
+= Tomás Centeno
+
+
+
+- @
+- @
+- @
+- @
+- @root: Return to main
+
+@
+title: 
+subtitle: 
+unavailable-subtitle: 
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 5; 
+
+
+
+@
+title:
+subtitle: 
+unavailable-subtitle: 
+choose-if: 
+on-arrival: 
+
+
+@
+title: 
+subtitle:
+unavailable-subtitle:
+choose-if: 
+on-arrival: advisor_action_timer = 6;
+go-to: fiscal_policy
+
+@
+title: 
+subtitle: 
+unavailable-subtitle: 
+choose-if: advisor_action_timer == 
+on-arrival: advisor_action_timer = 6; 
+go-to: 
