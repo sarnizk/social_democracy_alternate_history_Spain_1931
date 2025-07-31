@@ -8,32 +8,33 @@ new-page: true
 
 = Tomás Centeno
 
+description placeholder
 
-
-- @
-- @
-- @
-- @
+- @ action placeholder
+- @ action placeholder
+- @ action placeholder
+- @ action placeholder
 - @root: Return to main
 
-@
+@ action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: 
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 5; 
 
+description placeholder
 
-
-@
+@ action placeholder
 title:
 subtitle: 
 unavailable-subtitle: 
 choose-if: 
 on-arrival: 
 
+description placeholder
 
-@
+@ action placeholder
 title: 
 subtitle:
 unavailable-subtitle:
@@ -41,10 +42,14 @@ choose-if:
 on-arrival: advisor_action_timer = 6;
 go-to: fiscal_policy
 
-@
+description placeholder
+
+@ action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: 
 choose-if: advisor_action_timer == 
 on-arrival: advisor_action_timer = 6; 
 go-to: 
+
+description placeholder
