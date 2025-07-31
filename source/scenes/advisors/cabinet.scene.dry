@@ -1,14 +1,14 @@
 title: Cabinet
 is-pinned-card: true
 tags: advisor
-card-image: img/muller_cabinet.jpg
-view-if: difficulty < 0 and spd_in_government and chancellor_party = "SPD"
+card-image: 
+view-if: difficulty < 0 and PSOE_in_government and PM_party = "PSOE"
 on-arrival: last_cabinet_action = 1
 new-page: true 
 
 = Cabinet
 
-With an SPD chancellor and SPD cabinet members, we can direct the affairs of the national government.
+With a PSOE prime minister and PSOE cabinet members, we can direct the affairs of the national government.
 
 - #cabinet
 - @back: Return to main
