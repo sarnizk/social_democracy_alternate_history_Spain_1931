@@ -7,15 +7,15 @@ view-if: Carrillo_advisor = 1
 
 = Wenceslao Carrillo
 
+description placeholder
 
-
-- @
-- @
-- @
-- @
+- @action placeholder
+- @action placeholder
+- @action placeholder
+- @action placeholder
 - @root: Return to main
 
-@
+@action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
@@ -23,7 +23,9 @@ choose-if: advisor_action_timer == 0
 on-arrival: advisor_action_timer = 6;
 go-to: 
 
-@
+description placeholder
+
+@action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: 
@@ -31,22 +33,22 @@ choose-if: advisor_action_timer ==
 on-arrival: advisor_action_timer = 6;
 go-to: foreign_policy
 
+description placeholder
 
-@
+@action placeholder
 title: 
 subtitle: 
 choose-if: advisor_action_timer = 0
 unavailable-subtitle: 
 on-arrival: advisor_action_timer = 6; 
 
+description placeholder
 
-
-
-@
+@action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: 
 choose-if:  
 on-arrival: advisor_action_timer = 6; 
 
-
+description placeholder
