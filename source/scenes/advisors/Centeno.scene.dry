@@ -10,13 +10,13 @@ new-page: true
 
 description placeholder
 
-- @ action placeholder
-- @ action placeholder
-- @ action placeholder
-- @ action placeholder
+- @action placeholder
+- @action placeholder
+- @action placeholder
+- @action placeholder
 - @root: Return to main
 
-@ action placeholder
+@action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: 
@@ -25,7 +25,7 @@ on-arrival: advisor_action_timer = 5;
 
 description placeholder
 
-@ action placeholder
+@action placeholder
 title:
 subtitle: 
 unavailable-subtitle: 
@@ -34,7 +34,7 @@ on-arrival:
 
 description placeholder
 
-@ action placeholder
+@action placeholder
 title: 
 subtitle:
 unavailable-subtitle:
@@ -44,7 +44,7 @@ go-to: fiscal_policy
 
 description placeholder
 
-@ action placeholder
+@action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: 
