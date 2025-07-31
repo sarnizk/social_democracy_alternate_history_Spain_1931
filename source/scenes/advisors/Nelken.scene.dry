@@ -7,16 +7,16 @@ new-page: true
 
 = Margarita Nelken
 
+ description placeholder
 
-
-
-- @
-- @
-- @
+- @action placeholder
+- @action placeholder
+- @action placeholder
 - @root: Return to main
 
+description placeholder
 
-@_
+@action placeholder
 title: 
 subtitle: 
 choose-if: 
@@ -24,6 +24,7 @@ unavailable-subtitle:
 on-arrival: advisor_action_timer = 6;
 go-to: 
 
+description placeholder
 
 @womens_rights_
 title: Women's rights
@@ -33,7 +34,9 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 on-arrival: advisor_action_timer = 6; womens_rights_timer -= 10; last_advisor_action = 1
 go-to: womens_rights
 
-@
+description placeholder
+
+@action placeholder
 title: 
 subtitle: 
 choose-if: 
@@ -41,4 +44,4 @@ unavailable-subtitle:
 on-arrival: advisor_action_timer = 6; 
 go-to: 
 
-
+description placeholder
