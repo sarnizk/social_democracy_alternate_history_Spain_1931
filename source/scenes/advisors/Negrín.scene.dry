@@ -10,8 +10,8 @@ new-page: true
 Juan Negrín is a stauch oponent of fascism, and advocates for class struggle and cooperation with the USSR and the PCE.
 
 - @class_struggle
-- @
-- @
+- @ action placeholder
+- @ action placeholder
 - @root: Return to main
 
 @class_struggle
@@ -24,15 +24,16 @@ on-arrival: advisor_action_timer = 6;
 Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
 
 
-@
+@ action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: 
 choose-if: advisor_action_timer = 
 on-arrival: advisor_action_timer = 6;
 
+description placeholder
 
-@
+@ action placeholder
 title: 
 subtitle: 
 unavailable-subtitle: 
@@ -40,6 +41,4 @@ view-if:
 choose-if: advisor_action_timer == 
 on-arrival: advisor_action_timer = 6; 
 
-
-
-
+description placeholder
