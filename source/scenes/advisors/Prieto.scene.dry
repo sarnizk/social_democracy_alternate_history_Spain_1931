@@ -11,7 +11,7 @@ Prieto is one of the makers of the San Sebastian Pact.
 
 - @coalition
 - @media
-- @
+- @action placeholder
 - @root: Return to main
 
 @coalition
@@ -22,6 +22,7 @@ unavailable-subtitle:
 on-arrival: advisor_action_timer = 6; 
 go-to: 
 
+description placeholder
 
 @media
 title: 
@@ -30,11 +31,12 @@ choose-if: advisor_action_timer == 0 and rural_policy > 0
 unavailable-subtitle: 
 on-arrival: advisor_action_timer = advisor_action_timer = 6; 
 
+description placeholder
+
 @
 title: 
 subtitle: 
 choose-if: 
 unavailable-subtitle: 
 
-
-
+description placeholder
