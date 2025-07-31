@@ -1,0 +1,52 @@
+title: Wenceslao Carrillo
+is-pinned-card: true 
+tags: advisor, labor
+card-image: 
+new-page: true
+view-if: Carrillo_advisor = 1
+
+= Wenceslao Carrillo
+
+
+
+- @
+- @
+- @
+- @
+- @root: Return to main
+
+@
+title: 
+subtitle: 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0
+on-arrival: advisor_action_timer = 6;
+go-to: 
+
+@
+title: 
+subtitle: 
+unavailable-subtitle: 
+choose-if: advisor_action_timer == 
+on-arrival: advisor_action_timer = 6;
+go-to: foreign_policy
+
+
+@
+title: 
+subtitle: 
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: 
+on-arrival: advisor_action_timer = 6; 
+
+
+
+
+@
+title: 
+subtitle: 
+unavailable-subtitle: 
+choose-if:  
+on-arrival: advisor_action_timer = 6; 
+
+
