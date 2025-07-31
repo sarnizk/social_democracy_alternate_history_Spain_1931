@@ -7,23 +7,25 @@ new-page: true
 
 = Julián Zugazagoitia
 
-Zuga is 
+description placeholder
 
 - @media
-- @
-- @
+- @action placeholder
+- @action placeholder
 - @root: Return to main
 
-@meadia
+description placeholder
+
+@media
 title: 
 subtitle: 
 choose-if:
 unavailable-subtitle: 
 on-arrival: advisor_action_timer = 6; 
 
+description placeholder
 
-
-@
+@action placeholder
 title: 
 subtitle: 
 choose-if:
@@ -31,11 +33,13 @@ unavailable-subtitle:
 on-arrival: advisor_action_timer = 6;
 go-to: 
 
-@
+description placeholder
+
+@action placeholder
 title: 
 subtitle:
 unavailable-subtitle:
 choose-if: advisor_action_timer == 
 on-arrival: advisor_action_timer = 6;  
 
-
+description placeholder
