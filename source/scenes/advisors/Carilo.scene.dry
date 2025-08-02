@@ -9,9 +9,16 @@ view-if: Carilo_advisor = 1
 
 Santiago Carrillo is very influential among the socialist and communist youth in the counrty. He advocates for a united front with the communists.
 
-- @
-- @
-- @
+- @socailist_youth
+- @action placeholder
+- @action placeholder
 - @root: Return to main
 
-@
+@socialist_youth
+title: Support the Socialist Youth
+subtitle: We must build up the strenght of our youth organizations. -1 resources
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if resources <= 0 : Not enough resources. ?]
+choose-if: advisor_action_timer = 0 and resources > 0
+on-arrival: advisor_action_timer = 6; resources -= 1; left_strength += 5; left_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spd += 2*(1-dissent); new_middle_spd += 1;
+
+Carrillo supports building a military, revolutionary minded Socialist Youth.
