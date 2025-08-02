@@ -1,13 +1,13 @@
 title: Francisco Largo Caballero "The Spanish Lenin"
 is-pinned-card: true
-tags: advisor, labor
+tags: advisor, left
 card-image: 
-view-if: LargoCaballero_advisor = 1
+view-if: Caballero_advisor = 1
 new-page: true 
 
 = Francisco Largo Caballero
 
-Largo Caballero is a leader of the UGT, the PSOE aligned trade union.
+Largo Caballero is a leader of the UGT, the PSOE aligned trade union. He tries to steer PSOE towards a more revolutionary path.
 
 - @blue_collar
 - @union_unity
