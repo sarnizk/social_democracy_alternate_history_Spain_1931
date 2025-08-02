@@ -7,10 +7,9 @@ view-if: Carrillo_advisor = 1
 
 = Wenceslao Carrillo
 
-description placeholder
+Wenceslao Carrillo is the director of El Socialista, the party´s newspaper. 
 
 - @media_
-- @PCE_cooperation
 - @faction_support
 - @police_affairs
 - @root: Return to main
@@ -23,15 +22,7 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 on-arrival: advisor_action_timer = 6; media_timer -= 6; last_advisor_action = 1
 go-to: media
 
-
-@PCE_cooperation
-title: Cooperation with the PCE
-subtitle: Any cooperation between the parties requires compromise from the PCE as well as the PSOE.
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
-choose-if: advisor_action_timer = 0
-on-arrival: advisor_action_timer = 6; left_strength += 5; PCE_relation += 6*(1-dissent); reformist_dissent += 3; communist_coalition += 1 if PCE_cooperation_seen <= 1; PCE_cooperation_seen += 1
-
-Carrillo attempts to reach out to his son to dissuade the PCE from their current extreme Stalinist path. Some concessions are extracted.
+description placeholder
 
 @faction_support_
 title: Editorial Line
