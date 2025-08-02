@@ -7,22 +7,21 @@ new-page: true
 
 = Negrín
 
-Juan Negrín is a stauch oponent of fascism, and advocates for class struggle and cooperation with the USSR and the PCE.
+Juan Negrín is a staunch advocate for cooperation with the USSR, and one of the better prepared estadists in Spanish history.
 
 - @class_struggle
 - @action placeholder
 - @action placeholder
 - @root: Return to main
 
-@class_struggle
-title: Rally for class struggle
-subtitle: The core of socialism should be the struggle of the proletariat against the bourgeoisie.
+@action placeholder
+title: 
+subtitle: 
 unavailable-subtitle: 
 choose-if: advisor_action_timer = 0
 on-arrival: advisor_action_timer = 6; 
 
-Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
-
+description placeholder
 
 @action placeholder
 title: 
