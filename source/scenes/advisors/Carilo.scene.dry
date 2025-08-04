@@ -9,9 +9,9 @@ view-if: Carilo_advisor = 1
 
 Santiago Carrillo is very influential among the socialist and communist youth in the counrty. He advocates for a united front with the communists.
 
-- @socailist_youth
-- @action placeholder
-- @action placeholder
+- @socialist_youth
+- @class_struggle
+- @PCE_cooperation
 - @root: Return to main
 
 @socialist_youth
@@ -22,3 +22,21 @@ choose-if: advisor_action_timer = 0 and resources > 0
 on-arrival: advisor_action_timer = 6; resources -= 1; left_strength += 5; left_dissent -= 3; rb_strength += 50; rb_militancy += 0.025; workers_spd += 2*(1-dissent); new_middle_spd += 1;
 
 Carrillo supports building a military, revolutionary minded Socialist Youth.
+
+@class_struggle
+title: Rally for class struggle
+subtitle: The core of socialism should be the struggle of the proletariat against the bourgeoisie.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; workers_spd += 4*(1-dissent); unemployed_spd += 3*(1-dissent); workers_spd += 4*(1-dissent) if nationalization_progress > 0; unemployed_spd += 3*(1-dissent) if nationalization_progress > 0; left_strength += 5; left_dissent -= 5; old_middle_spd -= 3; new_middle_spd -= 2
+
+Our message of class struggle appeals to the left wing of the working class, while potentially alienating the middle class. [? if nationalization_progress > 0 : Our achievements in nationalization have assisted our messaging. ?]
+
+@PCE_cooperation
+title: Cooperation with the PCE
+subtitle: Push the party to be more friendly towards the PCE.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; left_strength += 5; PCE_relation += 4*(1-dissent); reformist_dissent += 2; communist_coalition += 1 if PCE_cooperation_seen <= 1; PCE_cooperation_seen += 1
+
+Santiago Carrillo uses his influence among the youth to advocate for a renewed unity between the leftist forces.
