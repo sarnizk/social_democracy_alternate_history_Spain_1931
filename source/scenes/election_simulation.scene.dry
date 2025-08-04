@@ -2,11 +2,11 @@ title: Election Simulation
 set-jump: post_election
 
 
-- @1928: 1928 historical scenario
-- @1930: 1930 historical scenario
-- @1932: 1932 (July) historical scenario
+- @1931: 1931 historical scenario
+- @1933: 1933 historical scenario
+- @1936: 1936 historical scenario
 
-@1928
+@1931
 on-arrival: {!
 Q.workers = 46; // industry and trade
 Q.old_middle = 13; // "old mittelstand"
@@ -79,7 +79,7 @@ Q.catholics_other = 10;
 go-to: election_algorithm
 set-jump: post_election
 
-@1930
+@1933
 on-arrival: {!
 Q.workers = 46; // industry and trade
 Q.old_middle = 13; // "old mittelstand"
@@ -161,7 +161,7 @@ Q.other_r = 5;
 go-to: election_algorithm
 set-jump: post_election
 
-@1932
+@1936
 on-arrival: {!
 Q.workers = 46; // industry and trade
 Q.old_middle = 13; // "old mittelstand"
