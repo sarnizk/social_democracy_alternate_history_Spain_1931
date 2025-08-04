@@ -7,22 +7,22 @@ new-page: true
 
 = Francisco Largo Caballero
 
-Largo Caballero is a leader of the UGT, the PSOE aligned trade union. He tries to steer PSOE towards a more revolutionary path.
+Largo Caballero is a leader of the UGT, the PSOE aligned trade union. He tries to steer PSOE towards a more revolutionary path. One of the most influential members of the party.
 
-- @blue_collar
+- @building_the_left
 - @union_unity
-- @action placeholder
-- @action placeholder
+- @clear_agenda
+- @labor_rights
 - @root: Return to main
 
-@blue_collar
-title: Organizing blue-collar workers
-subtitle: Improve our standing among the working class.
-choose-if: advisor_action_timer <= 0
-unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
-on-arrival: advisor_action_timer = 6; 
+@building_the_left
+title: Building the Left
+subtitle: Push the PSOE to the left.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; left_strength += 6; left_dissent -= 8; reformist_dissent += 2
 
-We have increased our organizing among blue-collar workers.
+We have increased the strength of the left faction within the PSOE.
 
 @union_unity
 title: Union-party coordination
@@ -33,22 +33,27 @@ on-arrival: advisor_action_timer = 6; labor_dissent -= 10;
 
 We have reduced tensions with the Labor faction.
 
-@action placeholder
-title: 
-subtitle: 
-choose-if: 
-unavailable-subtitle: 
-on-arrival: advisor_action_timer = 6; 
-go-to: 
+@clear_agenda
+title: Clear the agenda
+subtitle: Removes all cards from the hand.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: {!
+Q.advisor_action_timer = 6;
+if (Q.difficulty >= 0) {
+    window.dendryUI.dendryEngine.state.currentHands['main'] = [];
+} else {
+    window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
+}
+!}
 
-description placeholder
+All items from our agenda have been cleared.
 
-@action placeholder
-title: 
-subtitle: 
-choose-if: 
-unavailable-subtitle: 
-on-arrival: advisor_action_timer = 6
-go-to: 
+@labor_rights_
+title: Labor Rights
+subtitle: As Labor Minister, Caballero can help set regulations for working conditions.
+choose-if: advisor_action_timer <= 0 and spd_in_government and labor_minister_party = "PSOE"
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if labor_minister_party != "PSOE" : The PSOE does not control the Labor Ministry. ?]
+on-arrival: advisor_action_timer = 6; labor_rights_timer -= 10; last_advisor_action = 1
+go-to: labor_rights
 
-description placeholder
