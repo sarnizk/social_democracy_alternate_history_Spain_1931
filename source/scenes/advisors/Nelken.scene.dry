@@ -1,30 +1,28 @@
 title: Margarita Nelken
 is-pinned-card: true
-tags: advisor
+tags: advisor, left
 card-image: 
 view-if: Nelken_advisor = 1
 new-page: true 
 
 = Margarita Nelken
 
- description placeholder
-
-- @action placeholder
-- @action placeholder
-- @action placeholder
+ Of foreign, Jew origin, Margarita Nelken stands as one of the most prominent feminists in the country. Her ardent speeches in the rural south spread the socialist message to the peasantry.
+- @organizing_women
+- @womens_rights_
+- @rural_campaign
 - @root: Return to main
 
-description placeholder
+@organizing_women
+title: Organizing women
+subtitle: Nelken stands firm in her work for emancipating women
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: womens_rights += 1; workers_spd += 3*(1-dissent); new_middle_spd += 6*(1-dissent); rural_spd += 2*(1-dissent); old_middle_spd += 1*(1-dissent); advisor_action_timer = 6
 
-@action placeholder
-title: 
-subtitle: 
-choose-if: 
-unavailable-subtitle: 
-on-arrival: advisor_action_timer = 6;
-go-to: 
+Nelken is a long-time advocate of women´s rights, arguably the most influential in Spain at the moment.
 
-description placeholder
+[? if spd_r < 50 : Unfortunately, women still disproportionately support the bourgeois parties. ?]
 
 @womens_rights_
 title: Women's rights
@@ -34,14 +32,11 @@ unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +
 on-arrival: advisor_action_timer = 6; womens_rights_timer -= 10; last_advisor_action = 1
 go-to: womens_rights
 
-description placeholder
+@rural_campaign
+title: Rural Campaign
+subtitle: Try to campaign among the rural populace.
+choose-if: advisor_action_timer == 0 and rural_policy > 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if rural_policy == 0 : We have not enacted any rural policies. ?]
+on-arrival: advisor_action_timer = 6; rural_spd += 5*(1-dissent); peoples_party_support += 1
 
-@action placeholder
-title: 
-subtitle: 
-choose-if: 
-unavailable-subtitle:
-on-arrival: advisor_action_timer = 6; 
-go-to: 
-
-description placeholder
+We have increased our campaigning among farmers and the rural populace.
